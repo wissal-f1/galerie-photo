@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Galerie Photo</title>
+    <style>
+        #image {
+            width: 500px;
+            height: 300px;
+            border: 2px solid black;
+            background-size: cover;
+            text-align: center;
+            line-height: 300px;
+        }
+        img {
+            width: 150px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="image">
+    Survolez une image ci-dessous pour l'afficher ici
+</div>
+
+<img src="https://via.placeholder.com/150" alt="Image 1"
+     onmouseover="upDate(this)"
+     onmouseout="unDo()">
+
+<img src="https://via.placeholder.com/150/0000FF" alt="Image 2"
+     onmouseover="upDate(this)"
+     onmouseout="unDo()">
+
+<script src="script.js"></script>
+
+</body>
+</html>
